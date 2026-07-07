@@ -16,12 +16,12 @@ Es fundamental seguir cada indicación para asegurar que la entrega sea aceptada
 
 Cada estudiante tiene asignado un repositorio con un nombre único basado en su número de carnet. El formato es el siguiente:
 ```
-PG-2025-[carnet]
+PG-2026-[carnet]
 ```
 
 **Ejemplo:** Para un estudiante con carnet `12345`, el repositorio asignado sería:
 ```
-PG-2025-12345
+PG-2026-12345
 ```
 
 Este nombre no puede modificarse. El estudiante debe realizar un fork de este repositorio y trabajar sobre esa copia, manteniendo siempre el nombre original.
@@ -33,13 +33,20 @@ Este nombre no puede modificarse. El estudiante debe realizar un fork de este re
 El proyecto **debe** seguir exactamente esta estructura:
 
 ```
-/Proyecto-Graduacion-2025-[carnet]
+/PG-2026-[carnet]
+│
+├── /capturas
+│   ├── captura-01.jpg           # Captura del sistema 1
+│   ├── captura-02.jpg           # Captura del sistema 2
+│   ├── ...                      # (mínimo 10 capturas)
+│   └── captura-10.jpg           # Captura del sistema 10
 │
 ├── /demo
 │   └── demo.mp4                 # Video demostrativo del proyecto
 │
 ├── /docs
-│   └── informe_final.pdf        # Informe final del equipo
+│   ├── informe_final.pdf        # Informe final del equipo
+│   └── consentimiento_firmado.pdf  # Consentimiento de uso de foto y video FIRMADO (OBLIGATORIO)
 │
 ├── /src
 │   ├── .env.example             # Ejemplo de variables de entorno
@@ -50,6 +57,14 @@ El proyecto **debe** seguir exactamente esta estructura:
 ```
 
 ### Descripción de cada carpeta
+
+#### `/capturas`
+Contiene las capturas de pantalla del software en funcionamiento.
+
+- **Archivos**: `captura-01.jpg`, `captura-02.jpg`, ... (numeradas de forma consecutiva)
+- **Cantidad**: **mínimo 10 capturas**
+- **Contenido**: Deben mostrar las pantallas y funcionalidades principales del sistema (login, vistas clave, flujos de uso, resultados, etc.)
+- **Formato**: JPG o PNG, legibles y a buena resolución
 
 #### `/demo`
 Contiene el video demostrativo del proyecto.
@@ -65,6 +80,11 @@ Contiene la documentación formal del proyecto.
 - **Archivo**: `informe_final.pdf`
 - **Contenido**: Resumen ejecutivo, objetivos, metodología, resultados y conclusiones
 - **Formato**: PDF (debe ser legible y no estar protegido)
+
+- **Archivo**: `consentimiento_firmado.pdf` — ⚠️ **OBLIGATORIO**
+- **Contenido**: El documento [Consentimiento de Uso de Foto y Video](Consentimiento-Uso-de-foto-y-Video.pdf) **firmado** por el estudiante
+- **Formato**: PDF legible con la firma visible
+- **Nota**: Descarga la plantilla del consentimiento, fírmala (a mano o de forma digital) y sube el PDF firmado a esta carpeta. **Sin este documento firmado la entrega NO será aceptada.**
 
 #### `/src`
 Contiene todo el código fuente del proyecto.
@@ -128,11 +148,16 @@ El archivo `README.md` es la carta de presentación del proyecto. Debe estar en 
    npm start
    ```
 
+## Capturas
+Las capturas de pantalla del sistema se encuentran en [`/capturas`](capturas/) (mínimo 10)
+
 ## Demo
 El video demostrativo se encuentra en [`/demo/demo.mp4`](demo/demo.mp4)
 
 ## Documentación
 El informe final del proyecto está disponible en [`/docs/informe_final.pdf`](docs/informe_final.pdf)
+
+El consentimiento de uso de foto y video firmado se encuentra en [`/docs/consentimiento_firmado.pdf`](docs/consentimiento_firmado.pdf)
 
 ## Autores
 - [Nombre del estudiante] - [Carnet]
@@ -147,14 +172,32 @@ El informe final del proyecto está disponible en [`/docs/informe_final.pdf`](do
 |----------|-------------|-------------|
 | Descripción | Sí | Explicación clara del propósito del proyecto |
 | Instalación | Sí | Pasos detallados para configurar y ejecutar |
+| Capturas | Sí | Referencia a las capturas en `/capturas` (mínimo 10) |
 | Demo | Sí | Referencia al video en `/demo/demo.mp4` |
 | Documentación | Sí | Enlace al informe en `/docs/informe_final.pdf` |
+| Consentimiento firmado | Sí | Enlace al consentimiento firmado en `/docs/consentimiento_firmado.pdf` |
 | Tecnologías | Sí | Lista de herramientas y frameworks utilizados |
 | Requisitos previos | Sí | Software necesario para ejecutar el proyecto |
 
 ---
 
 ## 3. Especificaciones de los Archivos
+
+### Capturas de Pantalla (`/capturas`)
+
+| Aspecto | Especificación |
+|---------|----------------|
+| Cantidad | **Mínimo 10 capturas** |
+| Formato | JPG o PNG |
+| Nombres | `captura-01`, `captura-02`, ... (consecutivos) |
+| Resolución | Legibles, sin recortes que oculten información relevante |
+| Contenido | Pantallas y funcionalidades principales del sistema |
+
+**Recomendaciones para las capturas:**
+1. Mostrar las vistas más importantes del sistema
+2. Incluir los flujos de uso principales (registro, inicio de sesión, operaciones clave)
+3. Evitar exponer datos sensibles o credenciales reales
+4. Numerarlas en el orden lógico de uso del sistema
 
 ### Video Demo (`demo.mp4`)
 
@@ -185,6 +228,23 @@ El informe debe incluir:
 - Conclusiones
 - Referencias bibliográficas
 - Anexos (si aplica)
+
+### Consentimiento de Uso de Foto y Video (`consentimiento_firmado.pdf`) — ⚠️ OBLIGATORIO
+
+Este documento es de **entrega obligatoria**. La entrega **no será aceptada** si falta o no está firmado.
+
+| Aspecto | Especificación |
+|---------|----------------|
+| Origen | Plantilla [`Consentimiento-Uso-de-foto-y-Video.pdf`](Consentimiento-Uso-de-foto-y-Video.pdf) provista en esta guía |
+| Firma | **Obligatoria** (a mano o digital), claramente visible |
+| Formato | PDF legible, sin protección de contraseña |
+| Ubicación | `/docs/consentimiento_firmado.pdf` en tu repositorio |
+
+**Pasos:**
+1. Descarga la plantilla del consentimiento desde esta guía
+2. Complétala con tus datos y **fírmala**
+3. Guarda el PDF firmado como `consentimiento_firmado.pdf`
+4. Súbelo a la carpeta `/docs` de tu repositorio
 
 ---
 

@@ -14,6 +14,14 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 
 ## 1. Estructura de Carpetas
 
+### Carpeta `/capturas`
+- [ ] La carpeta `/capturas` existe en la raíz del repositorio
+- [ ] Contiene **al menos 10 capturas de pantalla** del software
+- [ ] Las capturas están en formato JPG o PNG
+- [ ] Las capturas son legibles y a buena resolución
+- [ ] Las capturas muestran las funcionalidades principales del sistema
+- [ ] Los archivos están numerados de forma consecutiva (`captura-01`, `captura-02`, ...)
+
 ### Carpeta `/demo`
 - [ ] La carpeta `/demo` existe en la raíz del repositorio
 - [ ] El archivo `demo.mp4` está presente dentro de `/demo`
@@ -25,6 +33,9 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 - [ ] El archivo `informe_final.pdf` está presente dentro de `/docs`
 - [ ] El PDF es legible y no está protegido con contraseña
 - [ ] El informe contiene todas las secciones requeridas
+- [ ] ⚠️ El archivo `consentimiento_firmado.pdf` está presente dentro de `/docs` (**OBLIGATORIO**)
+- [ ] El consentimiento está **firmado** y la firma es claramente visible
+- [ ] El consentimiento es legible y no está protegido con contraseña
 
 ### Carpeta `/src`
 - [ ] La carpeta `/src` existe en la raíz del repositorio
@@ -50,8 +61,10 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 - [ ] Incluye instrucciones de instalación paso a paso
 - [ ] Las instrucciones de instalación son reproducibles
 - [ ] Incluye instrucciones de ejecución
+- [ ] Referencia las capturas en `/capturas` (mínimo 10)
 - [ ] Referencia el video demo en `/demo/demo.mp4`
 - [ ] Referencia el informe final en `/docs/informe_final.pdf`
+- [ ] Referencia el consentimiento firmado en `/docs/consentimiento_firmado.pdf`
 - [ ] Incluye información del autor(es) y carnet
 
 ### Calidad
@@ -97,7 +110,19 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 
 ---
 
-## 5. Repositorio Git
+## 5. Consentimiento de Uso de Foto y Video ⚠️ OBLIGATORIO
+
+- [ ] Descargaste la plantilla del consentimiento provista en la guía
+- [ ] El documento está **firmado** (firma visible)
+- [ ] El archivo se llama `consentimiento_firmado.pdf`
+- [ ] Está ubicado en la carpeta `/docs`
+- [ ] El PDF es legible y no está protegido con contraseña
+
+> ⚠️ **Sin este documento firmado la entrega NO será aceptada.**
+
+---
+
+## 6. Repositorio Git
 
 ### Configuración
 - [ ] El repositorio es un fork del repositorio asignado
@@ -116,7 +141,7 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 
 ---
 
-## 6. Pull Request
+## 7. Pull Request
 
 - [ ] El Pull Request está creado hacia el repositorio original
 - [ ] El título del PR es descriptivo
@@ -129,13 +154,14 @@ Este checklist **debe completarse al 100%** antes de crear el Pull Request. Cual
 
 | Sección | Elementos | Completado |
 |---------|-----------|------------|
-| Estructura de Carpetas | 14 | [ ] |
-| README.md | 14 | [ ] |
+| Estructura de Carpetas | 23 | [ ] |
+| README.md | 16 | [ ] |
 | Video Demo | 8 | [ ] |
 | Informe Final | 12 | [ ] |
+| Consentimiento firmado | 5 | [ ] |
 | Repositorio Git | 9 | [ ] |
 | Pull Request | 4 | [ ] |
-| **TOTAL** | **61** | [ ] |
+| **TOTAL** | **77** | [ ] |
 
 ---
 

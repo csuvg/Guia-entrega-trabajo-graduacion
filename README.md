@@ -1,6 +1,6 @@
-# Proyecto de Graduación 2025
+# Proyecto de Graduación 2026
 
-Este documento es la guía oficial para la entrega de proyectos de graduación del ciclo 2025. Aquí se listan los requisitos, la estructura esperada y los pasos necesarios para completar la entrega obligatoria para optar al título.
+Este documento es la guía oficial para la entrega de proyectos de graduación del ciclo 2026. Aquí se listan los requisitos, la estructura esperada y los pasos necesarios para completar la entrega obligatoria para optar al título.
 
 Es importante revisar cada sección con atención y verificar que el proyecto cumpla con todos los puntos indicados. Los proyectos que no cumplan con los requisitos deberán ser corregidos antes de ser aceptados.
 
@@ -25,6 +25,7 @@ El proceso de entrega consta de cuatro pasos:
 | [📖 Manual de Instrucciones](docs/manual.md) | Guía completa con la estructura de carpetas y formato del README |
 | [✅ Checklist de Entrega](docs/checklist.md) | Lista de verificación obligatoria antes de entregar |
 | [🔀 Guía de Git y Pull Request](docs/guia-git.md) | Paso a paso para fork, commit y pull request |
+| [✍️ Consentimiento de Uso de Foto y Video](docs/Consentimiento-Uso-de-foto-y-Video.pdf) | Documento **obligatorio** que debes firmar y subir a tu carpeta `/docs` |
 
 ---
 
@@ -33,13 +34,20 @@ El proceso de entrega consta de cuatro pasos:
 El repositorio debe organizarse siguiendo estrictamente la siguiente estructura de directorios:
 
 ```
-/Proyecto-Graduacion-2025-[carnet]
+/PG-2026-[carnet]
+│
+├── /capturas                  # Capturas de pantalla del software (mínimo 10)
+│   └── captura-1.jpg         # Captura del sistema 1
+│   └── captura-2.jpg         # Captura del sistema 2
+│   └── ...   
+│   └── captura-n.jpg         # Captura del sistema n (mínimo 10)
 │
 ├── /demo
 │   └── demo.mp4              # Video demostrativo del proyecto
 │
 ├── /docs
 │   └── informe_final.pdf     # Informe final del proyecto
+│   └── consentimiento_firmado.pdf  # Consentimiento de uso de foto y video FIRMADO (OBLIGATORIO)
 │
 ├── /src
 │   ├── .env.example          # Archivo de ejemplo para variables de entorno
@@ -54,6 +62,8 @@ El repositorio debe organizarse siguiendo estrictamente la siguiente estructura 
 ## Requisitos y Consideraciones Importantes
 
 - El checklist de verificación debe completarse al **100%** sin excepción
+- La carpeta `/capturas` debe contener **al menos 10 capturas de pantalla** del software en funcionamiento
+- ⚠️ Es **OBLIGATORIO** firmar el [Consentimiento de Uso de Foto y Video](docs/Consentimiento-Uso-de-foto-y-Video.pdf) y subirlo firmado a `/docs/consentimiento_firmado.pdf`. **Sin este documento firmado la entrega NO será aceptada**
 - El Pull Request debe crearse **antes** de la fecha y hora límite establecidas
 - Los proyectos que no cumplan con la totalidad de los requisitos deberán ser corregidos antes de su aceptación formal
 - No se aceptarán entregas posteriores a la fecha límite bajo ninguna circunstancia

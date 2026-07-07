@@ -22,7 +22,7 @@ Los proyectos que no cumplan al 100% con el [checklist](checklist.md) deberán s
 ### ¿Dónde encuentro mi repositorio asignado?
 Tu repositorio tiene el formato:
 ```
-https://github.com/[profesor]/Proyecto-Graduacion-2025-[tu-carnet]
+https://github.com/[profesor]/PG-2026-[tu-carnet]
 ```
 Si no lo encuentras, contacta a tu profesor o asesor.
 
@@ -42,10 +42,28 @@ Si necesitas empezar de nuevo:
 ## Archivos y Estructura
 
 ### ¿Puedo agregar carpetas adicionales?
-Sí, puedes agregar carpetas extras si tu proyecto lo requiere, pero las carpetas obligatorias (`/demo`, `/docs`, `/src`) deben existir con los archivos requeridos.
+Sí, puedes agregar carpetas extras si tu proyecto lo requiere, pero las carpetas obligatorias (`/capturas`, `/demo`, `/docs`, `/src`) deben existir con los archivos requeridos. Recuerda que `/docs` debe incluir tanto el `informe_final.pdf` como el `consentimiento_firmado.pdf`.
+
+### ¿Tengo que firmar algún documento? ⚠️
+**Sí, es OBLIGATORIO.** Debes firmar el documento **Consentimiento de Uso de Foto y Video** y subir el PDF firmado a tu carpeta `/docs` con el nombre `consentimiento_firmado.pdf`. **Sin este documento firmado la entrega NO será aceptada.**
+
+### ¿Dónde encuentro el documento de consentimiento?
+La plantilla está disponible en esta guía: [`docs/Consentimiento-Uso-de-foto-y-Video.pdf`](Consentimiento-Uso-de-foto-y-Video.pdf). Descárgala, complétala, fírmala y sube el PDF firmado a la carpeta `/docs` de tu repositorio.
+
+### ¿Puedo firmar el consentimiento de forma digital?
+Sí. La firma puede ser manuscrita (imprimir, firmar y escanear) o digital, siempre que sea claramente visible en el PDF.
 
 ### Mi proyecto no usa package.json, ¿qué hago?
 Si tu proyecto no es de Node.js, no necesitas `package.json`. Sin embargo, incluye el archivo de dependencias correspondiente a tu tecnología (requirements.txt para Python, pom.xml para Java, etc.).
+
+### ¿Cuántas capturas de pantalla debo subir?
+Debes subir un **mínimo de 10 capturas** de tu software en funcionamiento dentro de la carpeta `/capturas`. Deben mostrar las pantallas y funcionalidades principales del sistema.
+
+### ¿Qué formato deben tener las capturas?
+- **Formato**: JPG o PNG
+- **Cantidad**: mínimo 10
+- **Nombres**: consecutivos (`captura-01`, `captura-02`, ...)
+- **Contenido**: pantallas y flujos principales del sistema, legibles y sin exponer credenciales reales
 
 ### ¿Qué formato debe tener el video demo?
 - **Formato**: MP4 (H.264)
@@ -101,7 +119,7 @@ Sí, pero no es necesario. Es mejor actualizar el PR existente con nuevos commit
 Sigue estos pasos:
 ```bash
 # Agregar el repositorio original
-git remote add upstream https://github.com/[profesor]/Proyecto-Graduacion-2025-[carnet].git
+git remote add upstream https://github.com/[profesor]/PG-2026-[carnet].git
 
 # Obtener cambios
 git fetch upstream
@@ -184,7 +202,7 @@ git push origin main
 ### Mi terminal dice "fatal: not a git repository"
 Asegúrate de estar en la carpeta correcta del proyecto:
 ```bash
-cd ruta/a/tu/Proyecto-Graduacion-2025-[carnet]
+cd ruta/a/tu/PG-2026-[carnet]
 ```
 
 ### GitHub dice que mi archivo es muy grande

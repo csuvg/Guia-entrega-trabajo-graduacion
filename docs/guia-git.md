@@ -20,7 +20,7 @@ El fork crea una copia del repositorio asignado en tu cuenta personal de GitHub.
    
    Tu repositorio tiene el formato:
    ```
-   https://github.com/[profesor]/Proyecto-Graduacion-2025-[tu-carnet]
+   https://github.com/[profesor]/PG-2026-[tu-carnet]
    ```
 
 2. **Haz clic en "Fork"**
@@ -33,7 +33,7 @@ El fork crea una copia del repositorio asignado en tu cuenta personal de GitHub.
    
    GitHub creará una copia en tu cuenta:
    ```
-   https://github.com/[tu-usuario]/Proyecto-Graduacion-2025-[tu-carnet]
+   https://github.com/[tu-usuario]/PG-2026-[tu-carnet]
    ```
 
 ---
@@ -45,15 +45,15 @@ Descarga el repositorio a tu computadora para trabajar localmente.
 ### Usando HTTPS
 
 ```bash
-git clone https://github.com/[tu-usuario]/Proyecto-Graduacion-2025-[tu-carnet].git
-cd Proyecto-Graduacion-2025-[tu-carnet]
+git clone https://github.com/[tu-usuario]/PG-2026-[tu-carnet].git
+cd PG-2026-[tu-carnet]
 ```
 
 ### Usando SSH (si tienes llaves configuradas)
 
 ```bash
-git clone git@github.com:[tu-usuario]/Proyecto-Graduacion-2025-[tu-carnet].git
-cd Proyecto-Graduacion-2025-[tu-carnet]
+git clone git@github.com:[tu-usuario]/PG-2026-[tu-carnet].git
+cd PG-2026-[tu-carnet]
 ```
 
 ---
@@ -64,7 +64,7 @@ Crea las carpetas requeridas:
 
 ```bash
 # Crear estructura de carpetas
-mkdir -p demo docs src
+mkdir -p capturas demo docs src
 
 # Verificar estructura
 ls -la
@@ -72,7 +72,8 @@ ls -la
 
 Tu estructura debe verse así:
 ```
-Proyecto-Graduacion-2025-[carnet]/
+PG-2026-[carnet]/
+├── capturas/
 ├── demo/
 ├── docs/
 ├── src/
@@ -86,15 +87,23 @@ Proyecto-Graduacion-2025-[carnet]/
 ### Copiar archivos a las carpetas correspondientes
 
 ```bash
+# Copiar capturas de pantalla (mínimo 10)
+cp /ruta/a/tus/capturas/*.jpg capturas/
+
 # Copiar video demo
 cp /ruta/a/tu/demo.mp4 demo/
 
 # Copiar informe
 cp /ruta/a/tu/informe_final.pdf docs/
 
+# Copiar consentimiento FIRMADO (OBLIGATORIO)
+cp /ruta/a/tu/consentimiento_firmado.pdf docs/
+
 # Copiar código fuente
 cp -r /ruta/a/tu/codigo/* src/
 ```
+
+> ⚠️ **OBLIGATORIO**: El archivo `consentimiento_firmado.pdf` es el documento *Consentimiento de Uso de Foto y Video* **firmado**. Descarga la plantilla desde la guía, fírmala y súbela a `/docs`. **Sin este documento firmado la entrega NO será aceptada.**
 
 ### Crear archivo .env.example
 
@@ -175,8 +184,10 @@ git add .
 
 # O agregar archivos específicos
 git add README.md
+git add capturas/
 git add demo/demo.mp4
 git add docs/informe_final.pdf
+git add docs/consentimiento_firmado.pdf
 git add src/
 ```
 
@@ -192,6 +203,14 @@ git commit -m "Agregar README y configuración inicial"
 # Commit de documentación
 git add docs/informe_final.pdf
 git commit -m "Agregar informe final del proyecto"
+
+# Commit del consentimiento firmado (OBLIGATORIO)
+git add docs/consentimiento_firmado.pdf
+git commit -m "Agregar consentimiento de uso de foto y video firmado"
+
+# Commit de capturas
+git add capturas/
+git commit -m "Agregar capturas de pantalla del sistema"
 
 # Commit de demo
 git add demo/demo.mp4
@@ -244,7 +263,7 @@ El Pull Request es la forma oficial de entregar tu proyecto.
 
 1. **Ve a tu fork en GitHub**
    ```
-   https://github.com/[tu-usuario]/Proyecto-Graduacion-2025-[tu-carnet]
+   https://github.com/[tu-usuario]/PG-2026-[tu-carnet]
    ```
 
 2. **Haz clic en "Contribute"** y luego **"Open pull request"**
@@ -253,9 +272,9 @@ El Pull Request es la forma oficial de entregar tu proyecto.
 
 3. **Verifica la dirección del PR**
    
-   - **Base repository**: `[profesor]/Proyecto-Graduacion-2025-[tu-carnet]` (el original)
+   - **Base repository**: `[profesor]/PG-2026-[tu-carnet]` (el original)
    - **Base branch**: `main`
-   - **Head repository**: `[tu-usuario]/Proyecto-Graduacion-2025-[tu-carnet]` (tu fork)
+   - **Head repository**: `[tu-usuario]/PG-2026-[tu-carnet]` (tu fork)
    - **Compare branch**: `main`
 
 4. **Completa el formulario**
@@ -274,8 +293,10 @@ El Pull Request es la forma oficial de entregar tu proyecto.
    - **Proyecto**: [Nombre del proyecto]
    
    ### Contenido incluido
+   - [x] Capturas de pantalla (capturas/ — mínimo 10)
    - [x] Video demo (demo/demo.mp4)
    - [x] Informe final (docs/informe_final.pdf)
+   - [x] Consentimiento de uso de foto y video FIRMADO (docs/consentimiento_firmado.pdf)
    - [x] Código fuente (src/)
    - [x] README.md con instrucciones
    
@@ -336,7 +357,7 @@ Si hay conflictos:
 
 ```bash
 # Agregar el repositorio original como upstream
-git remote add upstream https://github.com/[profesor]/Proyecto-Graduacion-2025-[tu-carnet].git
+git remote add upstream https://github.com/[profesor]/PG-2026-[tu-carnet].git
 
 # Obtener cambios
 git fetch upstream
@@ -356,8 +377,8 @@ git push origin main
 
 ```bash
 # 1. Clonar
-git clone https://github.com/[tu-usuario]/Proyecto-Graduacion-2025-[carnet].git
-cd Proyecto-Graduacion-2025-[carnet]
+git clone https://github.com/[tu-usuario]/PG-2026-[carnet].git
+cd PG-2026-[carnet]
 
 # 2. Crear estructura
 mkdir -p demo docs src
