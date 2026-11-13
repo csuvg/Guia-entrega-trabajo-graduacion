@@ -10,7 +10,7 @@
 Sí. La entrega del proyecto mediante este proceso es un requisito para graduarse.
 
 ### ¿Cuál es la fecha límite de entrega?
-La fecha límite es **[FECHA POR DEFINIR]**. El Pull Request debe estar creado antes de esta fecha. Entregas tardías no serán aceptadas.
+La fecha límite es el **viernes 20 de noviembre de 2026**. El Pull Request debe estar creado a más tardar ese día. Entregas tardías no serán aceptadas.
 
 ### ¿Puedo entregar antes de la fecha límite?
 Sí, puedes crear tu Pull Request cuando tengas todo listo. De hecho, es recomendable entregar con anticipación para evitar problemas de último momento.
