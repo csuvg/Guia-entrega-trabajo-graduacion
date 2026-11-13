@@ -2,19 +2,25 @@
 
 Este documento es la guía oficial para la entrega de proyectos de graduación del ciclo 2026. Aquí se listan los requisitos, la estructura esperada y los pasos necesarios para completar la entrega obligatoria para optar al título.
 
-Es importante revisar cada sección con atención y verificar que el proyecto cumpla con todos los puntos indicados. Los proyectos que no cumplan con los requisitos deberán ser corregidos antes de ser aceptados.
+La entrega del proyecto mediante este proceso es un requisito para graduarse. Es importante revisar cada sección con atención y verificar que el proyecto cumpla con todos los puntos indicados. Los proyectos que no cumplan con los requisitos deberán ser corregidos antes de ser aceptados.
+
+---
+
+## Cómo encontrar tu repositorio
+
+Busca tu número de carné en [los repositorios de GraduacionesUVG](https://github.com/orgs/GraduacionesUVG/repositories). El repositorio asignado se llama `2026-[carné]-[nombre-completo]`: el nombre va en minúsculas, sin tildes y con guiones entre palabras. Por ejemplo, `2026-12345-ana-lopez`. Confirma el nombre exacto antes de hacer el fork; sustituye los ejemplos de esta guía por el nombre asignado.
 
 ---
 
 ## Proceso de Entrega
 
-El proceso de entrega consta de cuatro pasos:
+El proceso de entrega consta de cinco pasos:
 
-1. Realizar un **Fork** del repositorio asignado según el número de carnet
+1. Localizar el repositorio asignado en [GraduacionesUVG](https://github.com/orgs/GraduacionesUVG/repositories) buscando el número de carné y hacer un **fork**
 2. Estructurar el proyecto siguiendo el formato establecido en esta guía
 3. Cargar todos los archivos requeridos en el repositorio
-4. Crear un **Pull Request** para formalizar la entrega
-5. Esperar que se haga el merge al branch.
+4. Crear un **Pull Request** desde tu fork hacia el repositorio original en `GraduacionesUVG` para formalizar la entrega
+5. Dar seguimiento al Pull Request hasta que sea aprobado e integrado
 
 ---
 
@@ -34,7 +40,7 @@ El proceso de entrega consta de cuatro pasos:
 El repositorio debe organizarse siguiendo estrictamente la siguiente estructura de directorios:
 
 ```
-/PG-2026-[carnet]
+/2026-[carnet]-[nombre-completo]
 │
 ├── /capturas                  # Capturas de pantalla del software (mínimo 10)
 │   └── captura-1.jpg         # Captura del sistema 1

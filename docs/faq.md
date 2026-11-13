@@ -6,6 +6,9 @@
 
 ## General
 
+### ¿Esta entrega es necesaria para graduarme?
+Sí. La entrega del proyecto mediante este proceso es un requisito para graduarse.
+
 ### ¿Cuál es la fecha límite de entrega?
 La fecha límite es **[FECHA POR DEFINIR]**. El Pull Request debe estar creado antes de esta fecha. Entregas tardías no serán aceptadas.
 
@@ -20,11 +23,11 @@ Los proyectos que no cumplan al 100% con el [checklist](checklist.md) deberán s
 ## Repositorio y Fork
 
 ### ¿Dónde encuentro mi repositorio asignado?
-Tu repositorio tiene el formato:
+Busca tu número de carné en [los repositorios de GraduacionesUVG](https://github.com/orgs/GraduacionesUVG/repositories). El nombre incluye tu carné y tu nombre completo en minúsculas, sin tildes y con guiones. Su URL tiene el formato:
 ```
-https://github.com/[profesor]/PG-2026-[tu-carnet]
+https://github.com/GraduacionesUVG/2026-[tu-carnet]-[tu-nombre-completo]
 ```
-Si no lo encuentras, contacta a tu profesor o asesor.
+Confirma el nombre exacto antes de hacer el fork. Si no lo encuentras, contacta a tu profesor o asesor.
 
 ### ¿Puedo cambiar el nombre del repositorio?
 No. El nombre del repositorio debe mantenerse exactamente como fue asignado.
@@ -100,7 +103,7 @@ No. El video debe estar en la carpeta `/demo` del repositorio. Esto asegura que 
 3. Sigue nuestra [Guía de Git](guia-git.md) paso a paso
 
 ### ¿Cómo sé si mi Pull Request fue creado correctamente?
-1. Ve al repositorio **original** (no tu fork)
+1. Ve al repositorio **original** en `GraduacionesUVG` (no a tu fork)
 2. Haz clic en la pestaña "Pull requests"
 3. Deberías ver tu PR en la lista
 
@@ -119,7 +122,7 @@ Sí, pero no es necesario. Es mejor actualizar el PR existente con nuevos commit
 Sigue estos pasos:
 ```bash
 # Agregar el repositorio original
-git remote add upstream https://github.com/[profesor]/PG-2026-[carnet].git
+git remote add upstream https://github.com/GraduacionesUVG/2026-[carnet]-[nombre-completo].git
 
 # Obtener cambios
 git fetch upstream
@@ -136,7 +139,7 @@ Esto significa que necesitas configurar SSH o usar HTTPS:
 
 **Opción HTTPS (más fácil):**
 ```bash
-git clone https://github.com/[tu-usuario]/tu-repo.git
+git clone https://github.com/[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo].git
 ```
 
 **Opción SSH:**
@@ -202,7 +205,7 @@ git push origin main
 ### Mi terminal dice "fatal: not a git repository"
 Asegúrate de estar en la carpeta correcta del proyecto:
 ```bash
-cd ruta/a/tu/PG-2026-[carnet]
+cd ruta/a/tu/2026-[carnet]-[nombre-completo]
 ```
 
 ### GitHub dice que mi archivo es muy grande

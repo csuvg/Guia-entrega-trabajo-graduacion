@@ -6,7 +6,7 @@
 
 ## Introducción
 
-Este manual contiene las instrucciones para la correcta entrega del proyecto de graduación. Se detallan la estructura de carpetas requerida, el formato del archivo README y las especificaciones técnicas de cada entregable.
+Este manual contiene las instrucciones para la correcta entrega del proyecto de graduación 2026, un requisito para graduarse. Se detallan la estructura de carpetas requerida, el formato del archivo README y las especificaciones técnicas de cada entregable.
 
 Es fundamental seguir cada indicación para asegurar que la entrega sea aceptada sin observaciones.
 
@@ -14,17 +14,17 @@ Es fundamental seguir cada indicación para asegurar que la entrega sea aceptada
 
 ## 0. Convención de Nombres
 
-Cada estudiante tiene asignado un repositorio con un nombre único basado en su número de carnet. El formato es el siguiente:
+Cada estudiante tiene asignado un repositorio en la organización `GraduacionesUVG`, identificado por su número de carné y nombre completo. El formato es:
 ```
-PG-2026-[carnet]
-```
-
-**Ejemplo:** Para un estudiante con carnet `12345`, el repositorio asignado sería:
-```
-PG-2026-12345
+2026-[carnet]-[nombre-completo]
 ```
 
-Este nombre no puede modificarse. El estudiante debe realizar un fork de este repositorio y trabajar sobre esa copia, manteniendo siempre el nombre original.
+**Ejemplo:** Para Ana López, con carné `12345`, el repositorio asignado sería:
+```
+2026-12345-ana-lopez
+```
+
+El nombre completo se escribe en minúsculas, sin tildes y con guiones entre palabras. Busca tu número de carné en [los repositorios de GraduacionesUVG](https://github.com/orgs/GraduacionesUVG/repositories) para confirmar el nombre exacto. Este nombre no puede modificarse. El estudiante debe realizar un fork de este repositorio y trabajar sobre esa copia, manteniendo siempre el nombre original. El Pull Request debe dirigirse al repositorio original en `GraduacionesUVG`.
 
 ---
 
@@ -33,7 +33,7 @@ Este nombre no puede modificarse. El estudiante debe realizar un fork de este re
 El proyecto **debe** seguir exactamente esta estructura:
 
 ```
-/PG-2026-[carnet]
+/2026-[carnet]-[nombre-completo]
 │
 ├── /capturas
 │   ├── captura-01.jpg           # Captura del sistema 1
@@ -128,8 +128,8 @@ El archivo `README.md` es la carta de presentación del proyecto. Debe estar en 
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/usuario/repositorio.git
-   cd repositorio
+   git clone https://github.com/[tu-usuario]/2026-[carnet]-[nombre-completo].git
+   cd 2026-[carnet]-[nombre-completo]
    ```
 
 2. Instalar dependencias:

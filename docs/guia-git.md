@@ -6,7 +6,7 @@
 
 ## Introducción
 
-Esta guía te llevará paso a paso por el proceso de fork, clonación, commits y creación del Pull Request para entregar tu proyecto de graduación.
+Esta guía te llevará paso a paso por el proceso de fork, clonación, commits y creación del Pull Request para entregar tu proyecto de graduación 2026. Esta entrega es un requisito para graduarse.
 
 ---
 
@@ -18,22 +18,20 @@ El fork crea una copia del repositorio asignado en tu cuenta personal de GitHub.
 
 1. **Accede al repositorio asignado**
    
-   Tu repositorio tiene el formato:
+   Busca tu número de carné en [los repositorios de GraduacionesUVG](https://github.com/orgs/GraduacionesUVG/repositories). El nombre incluye tu carné y tu nombre completo en minúsculas, sin tildes y con guiones. Confirma el nombre exacto antes de hacer el fork. Su URL tiene el formato:
    ```
-   https://github.com/[profesor]/PG-2026-[tu-carnet]
+   https://github.com/GraduacionesUVG/2026-[tu-carnet]-[tu-nombre-completo]
    ```
 
 2. **Haz clic en "Fork"**
    
    Busca el botón **Fork** en la esquina superior derecha de la página.
 
-   ![Fork Button](https://docs.github.com/assets/images/help/repository/fork_button.png)
-
 3. **Confirma la creación**
    
    GitHub creará una copia en tu cuenta:
    ```
-   https://github.com/[tu-usuario]/PG-2026-[tu-carnet]
+   https://github.com/[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo]
    ```
 
 ---
@@ -45,15 +43,15 @@ Descarga el repositorio a tu computadora para trabajar localmente.
 ### Usando HTTPS
 
 ```bash
-git clone https://github.com/[tu-usuario]/PG-2026-[tu-carnet].git
-cd PG-2026-[tu-carnet]
+git clone https://github.com/[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo].git
+cd 2026-[tu-carnet]-[tu-nombre-completo]
 ```
 
 ### Usando SSH (si tienes llaves configuradas)
 
 ```bash
-git clone git@github.com:[tu-usuario]/PG-2026-[tu-carnet].git
-cd PG-2026-[tu-carnet]
+git clone git@github.com:[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo].git
+cd 2026-[tu-carnet]-[tu-nombre-completo]
 ```
 
 ---
@@ -72,7 +70,7 @@ ls -la
 
 Tu estructura debe verse así:
 ```
-PG-2026-[carnet]/
+2026-[carnet]-[nombre-completo]/
 ├── capturas/
 ├── demo/
 ├── docs/
@@ -257,13 +255,13 @@ git push -u origin main
 
 ## Paso 8: Crear Pull Request
 
-El Pull Request es la forma oficial de entregar tu proyecto.
+El Pull Request hacia el repositorio original en `GraduacionesUVG` es la forma oficial de entregar tu proyecto.
 
 ### Instrucciones
 
 1. **Ve a tu fork en GitHub**
    ```
-   https://github.com/[tu-usuario]/PG-2026-[tu-carnet]
+   https://github.com/[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo]
    ```
 
 2. **Haz clic en "Contribute"** y luego **"Open pull request"**
@@ -272,9 +270,9 @@ El Pull Request es la forma oficial de entregar tu proyecto.
 
 3. **Verifica la dirección del PR**
    
-   - **Base repository**: `[profesor]/PG-2026-[tu-carnet]` (el original)
+   - **Base repository**: `GraduacionesUVG/2026-[tu-carnet]-[tu-nombre-completo]` (el original)
    - **Base branch**: `main`
-   - **Head repository**: `[tu-usuario]/PG-2026-[tu-carnet]` (tu fork)
+   - **Head repository**: `[tu-usuario]/2026-[tu-carnet]-[tu-nombre-completo]` (tu fork)
    - **Compare branch**: `main`
 
 4. **Completa el formulario**
@@ -357,7 +355,7 @@ Si hay conflictos:
 
 ```bash
 # Agregar el repositorio original como upstream
-git remote add upstream https://github.com/[profesor]/PG-2026-[tu-carnet].git
+git remote add upstream https://github.com/GraduacionesUVG/2026-[tu-carnet]-[tu-nombre-completo].git
 
 # Obtener cambios
 git fetch upstream
@@ -377,11 +375,11 @@ git push origin main
 
 ```bash
 # 1. Clonar
-git clone https://github.com/[tu-usuario]/PG-2026-[carnet].git
-cd PG-2026-[carnet]
+git clone https://github.com/[tu-usuario]/2026-[carnet]-[nombre-completo].git
+cd 2026-[carnet]-[nombre-completo]
 
 # 2. Crear estructura
-mkdir -p demo docs src
+mkdir -p capturas demo docs src
 
 # 3. Agregar archivos
 # (copiar tus archivos a las carpetas)
